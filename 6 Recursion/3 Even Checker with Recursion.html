@@ -1,0 +1,42 @@
+<script>
+
+// Complete the 'is_even' function using recursion so that given the input 'number' it will return 'true' when the input is even and 'false' if it isn't.
+
+// Hint: Keep in mind negative numbers!
+
+// Expected Input 1: is_even(2)
+// Expected Output 1: true
+
+// Expected Input 2: is_even(5)
+// Expected Output 2: false
+
+// Expected Input 3: is_even(-20)
+// Expected Output 3: true
+
+// Type your code below inside the 'is_even' function
+
+function is_even (number)
+{
+  if (number < 0)
+  {
+    number = Math.abs(number);
+  }
+
+  if (number==0) return true;
+
+  if (number==1) return false;
+
+  else
+  {
+    number = number - 2;
+    return is_even(number);
+  }
+}
+
+// Testing the code
+
+console.log(is_even(2)); //true
+console.log(is_even(5)); //false
+console.log(is_even(-20)); //true
+
+</script>
