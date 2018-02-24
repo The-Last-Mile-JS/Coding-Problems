@@ -17,26 +17,11 @@
 
 function is_even (number)
 {
-  if (number < 0)
-  {
-    number = Math.abs(number);
-  }
 
-  if (number==0) return true;
 
-  if (number==1) return false;
 
-  else
-  {
-    number = number - 2;
-    return is_even(number);
-  }
+
+
 }
-
-// Testing the code
-
-console.log(is_even(2)); //true
-console.log(is_even(5)); //false
-console.log(is_even(-20)); //true
 
 </script>
